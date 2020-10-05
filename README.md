@@ -4,47 +4,47 @@ Distributed Systems Engineering notes (6.824, Spring 2015)
 Lectures
 --------
 
-Lecture notes from 6.824, taught by [Prof. Robert T. Morris](http://pdos.csail.mit.edu/rtm/). These lecture notes are slightly modified from the ones posted on the 6.824 [course website](http://nil.csail.mit.edu/6.824/2015/schedule.html).
+Lecture notes from 6.824, taught by [Prof. Robert T. Morris](http://pdos.csail.mit.edu/rtm/). These lecture notes are slightly modified from the ones posted on the 6.824 [course website](http://nil.csail.mit.edu/6.824/2015/schedule.md).
 
- * Lecture 1: [Introduction](l01-intro.html): distributed system definition, motivations, architecture, implementation, performance, fault-tolerance, consistency, MapReduce 
- * Lecture 2: [Remote Procedure Calls (RPCs)](l02-rpc.html): RPC overview, marshalling, binding, threads, "at-least-once", "at-most-once", "exactly once", Go's RPC, thread synchronization
- * Lecture 3: [Fault tolerance](l03-fault-tolerance.html): primary-backup replication, state transfer, "split-brain", Remus (NSDI 2008),  
- * Lecture 4: [Flat datacenter storage](l04-more-primary-backup.html): flat datacenter storage, bisection bandwidth, striping
- * Lecture 5: [Paxos](l05-paxos.html): Paxos, consensus algorithms
-    + [Paxos algorithm description](paxos-algorithm.html)
- * Lecture 6: [Raft](l06-raft.html): Raft, a more understandable consensus algorithm
- * Lecture 7: **Google Go** [_guest lecture_](l07-go.html) by Russ Cox
- * Lecture 8: [Harp](l08-harp.html): distributed file system, "the UPS trick", witnesses
- * Lecture 9: [IVY](l09-dist-comp-seq-consistency.html): distributed shared memory, sequential consistency
- * Lecture 10: [TreadMarks](l10-treadmarks.html): userspace distributed shared memory system, vector timestamps, release consistency (lazy/eager), false sharing, write amplification
- * Lecture 11: [Ficus](l11-ficus.html): optimistic concurrency control, vector timestamps, conflict resolution
- * Lecture 12: [Bayou](l12-bayou.html): disconnected operation, eventual consistency, Bayou
- * Lecture 13: [MapReduce](l13-mapreduce.html): MapReduce, scalability, performance
- * Lecture 14: **Spark** [_guest lecture_](l14-spark.html) by Matei Zaharia: Resilient Distributed Datasets, Spark
- * Lecture 15: **Spanner** [_guest lecture_](l15-spanner.html) by Wilson Hsieh, Google: Spanner, distributed database, clock skew
- * Lecture 16: [Memcache at Facebook](l16-memcached.html): web app scalability, look-aside caches, Memcache
- * Lecture 17: [PNUTS Yahoo!](l17-pnuts.html): distributed key-value store, atomic writes
- * Lecture 18: [Dynamo](l18-dynamo.html): distributed key-value store, eventual consistency
- * Lecture 19: **HubSpot** [_guest lecture_](l19-hubspot.html)
- * Lecture 20: [Two phase commit (2PC)](l20-argus.html): two-phase commit, Argus
- * Lecture 21: [Optimistic concurrency control](l21-thor.html)
- * Lecture 22: [Peer-to-peer, trackerless Bittorrent and DHTs](l22-peer-to-peer.html): Chord, routing
- * Lecture 23: [Bitcoin](l23-bitcoin.html): verifiable public ledgers, proof-of-work, double spending
+ * Lecture 1: [Introduction](l01-intro.md): distributed system definition, motivations, architecture, implementation, performance, fault-tolerance, consistency, MapReduce 
+ * Lecture 2: [Remote Procedure Calls (RPCs)](l02-rpc.md): RPC overview, marshalling, binding, threads, "at-least-once", "at-most-once", "exactly once", Go's RPC, thread synchronization
+ * Lecture 3: [Fault tolerance](l03-fault-tolerance.md): primary-backup replication, state transfer, "split-brain", Remus (NSDI 2008),  
+ * Lecture 4: [Flat datacenter storage](l04-more-primary-backup.md): flat datacenter storage, bisection bandwidth, striping
+ * Lecture 5: [Paxos](l05-paxos.md): Paxos, consensus algorithms
+    + [Paxos algorithm description](paxos-algorithm.md)
+ * Lecture 6: [Raft](l06-raft.md): Raft, a more understandable consensus algorithm
+ * Lecture 7: **Google Go** [_guest lecture_](l07-go.md) by Russ Cox
+ * Lecture 8: [Harp](l08-harp.md): distributed file system, "the UPS trick", witnesses
+ * Lecture 9: [IVY](l09-dist-comp-seq-consistency.md): distributed shared memory, sequential consistency
+ * Lecture 10: [TreadMarks](l10-treadmarks.md): userspace distributed shared memory system, vector timestamps, release consistency (lazy/eager), false sharing, write amplification
+ * Lecture 11: [Ficus](l11-ficus.md): optimistic concurrency control, vector timestamps, conflict resolution
+ * Lecture 12: [Bayou](l12-bayou.md): disconnected operation, eventual consistency, Bayou
+ * Lecture 13: [MapReduce](l13-mapreduce.md): MapReduce, scalability, performance
+ * Lecture 14: **Spark** [_guest lecture_](l14-spark.md) by Matei Zaharia: Resilient Distributed Datasets, Spark
+ * Lecture 15: **Spanner** [_guest lecture_](l15-spanner.md) by Wilson Hsieh, Google: Spanner, distributed database, clock skew
+ * Lecture 16: [Memcache at Facebook](l16-memcached.md): web app scalability, look-aside caches, Memcache
+ * Lecture 17: [PNUTS Yahoo!](l17-pnuts.md): distributed key-value store, atomic writes
+ * Lecture 18: [Dynamo](l18-dynamo.md): distributed key-value store, eventual consistency
+ * Lecture 19: **HubSpot** [_guest lecture_](l19-hubspot.md)
+ * Lecture 20: [Two phase commit (2PC)](l20-argus.md): two-phase commit, Argus
+ * Lecture 21: [Optimistic concurrency control](l21-thor.md)
+ * Lecture 22: [Peer-to-peer, trackerless Bittorrent and DHTs](l22-peer-to-peer.md): Chord, routing
+ * Lecture 23: [Bitcoin](l23-bitcoin.md): verifiable public ledgers, proof-of-work, double spending
 
 Lectures form other years
 -------------------------
 
- * [Practical Byzantine Fault Tolerance (PBFT)](extra/pbft.html)
+ * [Practical Byzantine Fault Tolerance (PBFT)](extra/pbft.md)
     + Other years: [[2012]](original-notes/pbft-2012.txt), [[2011]](original-notes/pbft-2011.txt), [[2010]](original-notes/pbft-2010.txt), [[2009]](original-notes/pbft-2009.txt), [[2001]](original-notes/pbft-2001.txt), [[PPT]](original-notes/pbft.ppt)
 
 Labs
 ----
 
- - Lab 1: MapReduce, [[assign]](lab1/index.html)
- - Lab 2: A fault-tolerant key/value service, [[assign]](lab2/index.html), [[notes]](lab2/notes.html)
- - Lab 3: Paxos-based Key/Value Service, [[assign]](lab3/index.html), [[notes]](lab3/notes.html)
- - Lab 4: Sharded Key/Value Service, [[assign]](lab4/index.html), [[notes]](lab4/notes.html)
- - Lab 5: Persistent Key/Value Service, [[assign]](lab5/index.html)
+ - Lab 1: MapReduce, [[assign]](lab1/index.md)
+ - Lab 2: A fault-tolerant key/value service, [[assign]](lab2/index.md), [[notes]](lab2/notes.md)
+ - Lab 3: Paxos-based Key/Value Service, [[assign]](lab3/index.md), [[notes]](lab3/notes.md)
+ - Lab 4: Sharded Key/Value Service, [[assign]](lab4/index.md), [[notes]](lab4/notes.md)
+ - Lab 5: Persistent Key/Value Service, [[assign]](lab5/index.md)
 
 Papers
 ------
@@ -83,7 +83,7 @@ Other papers:
 Stumbled upon
 -------------
 
- 1. [A brief history of consensus, 2PC and transaction commit](http://betathoughts.blogspot.com/2007/06/brief-history-of-consensus-2pc-and.html)
+ 1. [A brief history of consensus, 2PC and transaction commit](http://betathoughts.blogspot.com/2007/06/brief-history-of-consensus-2pc-and.md)
  1. [Distributed systems theory for the distributed systems engineer](http://the-paper-trail.org/blog/distributed-systems-theory-for-the-distributed-systems-engineer/)
  1. [Distributed Systems: For fun and Profit](http://book.mixu.net/distsys/)
  1. [You can't choose CA out of CAP](https://codahale.com/you-cant-sacrifice-partition-tolerance/), or "You can't sacrifice partition tolerance"
@@ -93,4 +93,4 @@ Stumbled upon
 Quizzes
 -------
 
-Prep for quiz 1 [here](exams/quiz1/quiz1.html)
+Prep for quiz 1 [here](exams/quiz1/quiz1.md)
